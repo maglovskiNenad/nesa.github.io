@@ -1,5 +1,8 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: "Oswald", sans-serif;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color: black;
+    color: white;
+    font-family: "Oswald", sans-serif;
 }
