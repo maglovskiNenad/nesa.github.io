@@ -18,13 +18,8 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row-reverse;
-}
-
-.main-wraper-navbar {
-  display:flex;
-  justify-content:space-between;
 }
 
 .navbar {
