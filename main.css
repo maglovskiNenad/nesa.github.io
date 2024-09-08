@@ -8,7 +8,19 @@ body {
 }
 
 .text {
-  text-align: center;
+  text-align: left;
+  position: relative;
+  text-transform: uppercase;
+  animation: floatText 5s infinite linear;
+}
+
+@keyframes floatText {
+  from {
+    transform: translateX(-40%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .underline {
@@ -20,6 +32,10 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+}
+
+.menu {
+  display: none;
 }
 
 .navbar {
@@ -38,4 +54,8 @@ li {
 
 .logo {
   margin: 0 15px;
+}
+
+.m {
+  margin: 15px;
 }
