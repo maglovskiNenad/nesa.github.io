@@ -12,6 +12,7 @@ body {
   position: relative;
   text-transform: uppercase;
   animation: floatText 5s infinite linear;
+  overflow: hidden;
 }
 
 @keyframes floatText {
