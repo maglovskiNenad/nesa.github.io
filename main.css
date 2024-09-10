@@ -1,9 +1,16 @@
-body {
-  width: 100%;
+:root {
+  --background-color: #17153b;
+  --color-font: #eeeeee;
+  --shadow: #433d8b;
+  --alternativa: #787a91;
+}
+
+* {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--color-font);
+  width: 100%;
   font-family: "Oswald", sans-serif;
 }
 
@@ -12,15 +19,15 @@ body {
   position: relative;
   text-transform: uppercase;
   animation: floatText 5s infinite linear;
-  overflow: hidden;
+  font-size: 150px;
 }
 
 @keyframes floatText {
   from {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(-120%);
   }
 }
 
@@ -53,10 +60,12 @@ li {
   list-style: none;
 }
 
-.logo {
-  margin: 0 15px;
+.m {
+  font-size: xx-large;
+  margin: auto 15px;
 }
 
-.m {
-  margin: 15px;
+.text-wraper {
+  overflow: hidden;
+  text-wrap: nowrap;
 }
