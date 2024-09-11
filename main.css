@@ -61,8 +61,22 @@ li {
 }
 
 .m {
-  font-size: xx-large;
-  margin: auto 15px;
+  width: 35px;
+  margin: 3px 0 0 10px;
+  border-radius: 50%;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
 }
 
 .text-wraper {
