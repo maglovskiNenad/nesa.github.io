@@ -1,24 +1,29 @@
 :root {
-  --background-color: #17153b;
-  --color-font: #eeeeee;
-  --shadow: #433d8b;
+  --background-color: rgb(23, 21, 59);
+  --color-font: rgb(238, 238, 238);
+  --shadow: rgb(67, 61, 139);
   --alternativa: #787a91;
 }
 
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
   color: var(--color-font);
   width: 100%;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 .text {
   text-align: left;
   position: relative;
   text-transform: uppercase;
-  animation: floatText 5s infinite linear;
+  animation: floatText 15s infinite linear;
   font-size: 150px;
 }
 
@@ -40,6 +45,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  background-color: var(--shadow);
+  box-shadow: rgba(0, 0, 0, 0.71) 0px -50px 36px -28px inset;
 }
 
 .menu {
@@ -49,6 +56,8 @@
 .navbar {
   display: flex;
   justify-content: space-evenly;
+  margin: 15px 0;
+  cursor: pointer;
 }
 
 .nav {
