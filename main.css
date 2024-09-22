@@ -127,6 +127,11 @@ li {
 
   .two {
     transform: translateY(24px);
+    width: 35px;
+  }
+  
+  .thre {
+    width:25px;
   }
 }
 
