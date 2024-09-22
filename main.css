@@ -114,8 +114,7 @@ li {
 
   .burger {
     position: absolute;
-    width: 40px;
-    height: 6px;
+    height: 4px;
     background-color: var(--color-font);
     border-radius: 5px;
     margin: 6px 2px;
@@ -123,6 +122,7 @@ li {
 
   .one {
     transform: translateY(12px);
+    width: 45px;
   }
 
   .two {
@@ -131,7 +131,7 @@ li {
   }
   
   .thre {
-    width:25px;
+    width: 25px;
   }
 }
 
