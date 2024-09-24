@@ -96,10 +96,18 @@ li {
   .header {
     justify-content: space-between;
     flex-direction: row;
+    opacity: 0.9;
+    position: sticky;
   }
 
   .main-wraper-navbar {
+    display: block;
+  }
+
+  .navbar {
     display: none;
+    text-align: center;
+    margin-top: 50px;
   }
 
   .menu {
@@ -108,8 +116,38 @@ li {
     cursor: pointer;
   }
 
+  .nav {
+    margin: 10px;
+    font-size: x-large;
+    padding: 4px;
+  }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-font);
+    transform-origin: bottom right;
+    transition: transform 0.45s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
   .logo {
-    margin: 0;
+    margin: 5px 0;
   }
 
   .burger {
@@ -117,21 +155,25 @@ li {
     height: 4px;
     background-color: var(--color-font);
     border-radius: 5px;
-    margin: 6px 2px;
+    margin: 10px 10px;
   }
 
   .one {
     transform: translateY(12px);
-    width: 45px;
+    width: 30px;
   }
 
   .two {
     transform: translateY(24px);
+    width: 25px;
+  }
+
+  .three {
     width: 35px;
   }
 
-  .thre {
-    width: 25px;
+  .logo:hover {
+    transform: scale(0.7) slow;
   }
 }
 
