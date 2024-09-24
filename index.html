@@ -13,14 +13,14 @@
     <title>magla</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" onclick="openNav()">
       <nav class="main-wraper-navbar">
-        <div classy="menu" onclick="toggleMe()">
+        <div class="menu">
           <span class="one burger"></span>
           <span class="two burger"></span>
           <span class="three burger"></span>
         </div>
-        <ul class="navbar">
+        <ul class="navbar" id="navbar">
           <li class="nav hover-underline-animation" onclick="">Home</li>
           <li class="nav hover-underline-animation" onclick="">About</li>
           <li class="nav hover-underline-animation" onclick="">Roadmap</li>
@@ -35,7 +35,12 @@
       <div class="text-wraper">
         <h1 class="text">Hi!Welcome to my web page!</h1>
       </div>
-      <div class="home"></div>
+
+      <div class="home">
+        <div class="me">
+          <img class="meImg" src="image/logo.png" alt="photo of me" />
+        </div>
+      </div>
       <div class="about"></div>
       <div class="roadmap"></div>
       <div class="projects"></div>
