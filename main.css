@@ -19,39 +19,23 @@ body {
   background-color: var(--background-color);
 }
 
-.text {
-  text-align: left;
-  position: relative;
-  text-transform: uppercase;
-  animation: floatText 15s infinite linear;
-  font-size: 150px;
-}
-
-.underline {
-  color: var(--color-font);
-  width: 100%;
-}
-
 .header {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row-reverse;
+  justify-content: space-between;
   background-color: var(--shadow);
   box-shadow: rgba(0, 0, 0, 0.71) 0px -50px 36px -28px inset;
 }
 
-.menu {
-  display: none;
-}
-
 .navbar {
   display: flex;
-  justify-content: space-evenly;
-  margin: 15px 0;
-  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+  width: 50%;
 }
 
 .nav {
+  margin-right: 5px;
   text-transform: uppercase;
 }
 
@@ -69,9 +53,8 @@ li {
   animation: pulse-animation 2s infinite;
 }
 
-.text-wraper {
-  overflow: hidden;
-  text-wrap: nowrap;
+.menu {
+  display: none;
 }
 
 @keyframes pulse-animation {
@@ -80,15 +63,6 @@ li {
   }
   100% {
     box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-  }
-}
-
-@keyframes floatText {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-450%);
   }
 }
 
@@ -107,7 +81,8 @@ li {
   .navbar {
     display: none;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
+    width: 100%;
   }
 
   .menu {
@@ -117,33 +92,8 @@ li {
   }
 
   .nav {
-    margin: 10px;
-    font-size: x-large;
-    padding: 4px;
-  }
-
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-
-  .hover-underline-animation::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-font);
-    transform-origin: bottom right;
-    transition: transform 0.45s ease-out;
-  }
-
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    font-size: large;
+    margin-top: 15px;
   }
 
   .logo {
@@ -152,35 +102,24 @@ li {
 
   .burger {
     position: absolute;
-    height: 4px;
+    height: 3px;
     background-color: var(--color-font);
     border-radius: 5px;
     margin: 10px 10px;
   }
 
   .one {
-    transform: translateY(12px);
-    width: 30px;
+    transform: translateY(10px);
+    width: 15px;
   }
 
   .two {
-    transform: translateY(24px);
-    width: 25px;
+    transform: translateY(20px);
+    width: 20px;
   }
 
   .three {
-    width: 35px;
-  }
-
-  .header:hover .two {
-    transform: translateY(12px);
-    transition: all 0.5s;
-  }
-
-  .header:hover .one {
-    transform: translateZ(30px);
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
+    width: 30px;
   }
 
   .logo:hover {
@@ -193,5 +132,7 @@ li {
   }
 }
 
+/*
 @media screen and (min-width: 601px) {
 }
+*/
