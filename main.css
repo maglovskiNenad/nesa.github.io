@@ -5,37 +5,37 @@
   --alternativa: #787a91;
 }
 
-* {
+body {
+  background-color: white;
   margin: 0;
   padding: 0;
-  color: var(--color-font);
+  color: black;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-body {
-  background-color: var(--background-color);
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 .header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  background-color: var(--shadow);
-  box-shadow: rgba(0, 0, 0, 0.71) 0px -50px 36px -28px inset;
 }
 
 .navbar {
   display: flex;
   float: right;
   margin-top: 10px;
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .nav {
-  margin-right: 5px;
   text-transform: uppercase;
 }
 
@@ -55,6 +55,23 @@ li {
 
 .menu {
   display: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.toggleBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  float: right;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 15px;
 }
 
 @keyframes pulse-animation {
@@ -103,9 +120,9 @@ li {
   .burger {
     position: absolute;
     height: 3px;
-    background-color: var(--color-font);
     border-radius: 5px;
     margin: 10px 10px;
+    background-color: gray;
   }
 
   .one {
