@@ -1,6 +1,9 @@
 let navbar = document.getElementById("navbar");
 let toggle = document.getElementById("toggleBtn");
 let header = document.getElementById("header");
+
+let one = document.getElementById("one");
+
 var element = document.body;
 
 header.addEventListener("click", function () {
