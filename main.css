@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+}
+
+.ul--navbar {
+  list-style: none;
+  display: flex;
+  gap: 3%;
+}
+
+.dropdown--menu {
+  display: none;
+}
+
+.exit--menu {
+  display: none;
+}
+
+.li--navbar {
+  text-transform: uppercase;
+}
+
+.li--navbar:hover {
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
+}
