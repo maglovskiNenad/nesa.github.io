@@ -36,70 +36,22 @@ body {
   display: flex;
 }
 
-/*Small screen*/
-
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .dropdown--menu {
-    display: block;
-  }
+}
 
-  .ul--navbar {
-    display: block;
-  }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
 
-  .visible--navbar {
-    margin: 15px 0 0 0;
-    text-align: center;
-    cursor: pointer;
-    width: 95%;
-  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
 
-  .header {
-    height: 40px;
-    cursor: pointer;
-    width: 95%;
-  }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
 
-  .burger--menu {
-    position: absolute;
-    width: 28px;
-    height: 3px;
-    background-color: black;
-    border-radius: 5px;
-    margin: 10px 0 0 -15px;
-  }
-
-  .one {
-    transform: translateY(-8px);
-  }
-
-  .three {
-    transform: translateY(8px);
-  }
-
-  .one--animation {
-    transform: rotate(45deg);
-    transition: all 0.5s ease-in-out;
-  }
-
-  #x {
-    border: 1px solid black;
-    height: 20px;
-    margin-top: 20px;
-  }
-
-  .two--animation {
-    transform: translateX(-20px);
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .three--animation {
-    transform: rotate(135deg);
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navbar--menu {
-    display: none;
-  }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

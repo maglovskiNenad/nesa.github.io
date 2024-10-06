@@ -1,4 +1,4 @@
-let header = document.getElementById("header");
+/*let header = document.getElementById("header");
 let visibleNavbar = document.getElementById("visible--navbar");
 
 //On resize acting on navbar to change from dropdown menu to navbar menu
@@ -20,3 +20,4 @@ header.addEventListener("click", function () {
   document.querySelector(".two").classList.toggle("two--animation");
   document.querySelector(".three").classList.toggle("three--animation");
 });
+*/
