@@ -1,7 +1,12 @@
 let header = document.getElementById("header");
 let visibleNavbar = document.getElementById("visible--navbar");
-
-visibleNavbar.style.display = "none";
+let width = window.innerWidth;
+ 
+if(width < 600){
+    visibleNavbar.style.display = "none";
+}else{
+    visibleNavbar.style.display = "";
+    }
 
 header.addEventListener("click", function () {
   visibleNavbar.style.display =
