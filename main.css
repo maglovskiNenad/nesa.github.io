@@ -28,6 +28,14 @@ body {
   text-transform: uppercase;
 }
 
+.visible--navbar {
+  margin: 0 5px;
+}
+
+.navbar--menu {
+  display: flex;
+}
+
 /*Small screen*/
 
 @media only screen and (max-width: 600px) {
@@ -89,5 +97,9 @@ body {
   .three--animation {
     transform: rotate(135deg);
     transition: all 0.5s ease-in-out;
+  }
+
+  .navbar--menu {
+    display: none;
   }
 }
