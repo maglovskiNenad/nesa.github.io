@@ -91,14 +91,13 @@ body {
     text-align: center;
     list-style: none;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 10px 10px 0 0;
   }
 
   .visible--navbar {
     margin: 10px;
     height: 20px;
     cursor: pointer;
-    margin-left:15px;
   }
 
   .close--btn {
