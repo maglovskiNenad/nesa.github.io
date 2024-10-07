@@ -21,3 +21,16 @@ header.addEventListener("click", function () {
   document.querySelector(".three").classList.toggle("three--animation");
 });
 */
+
+let navbarSectionUl = document.getElementById("ul--section--navbar");
+let visibleNavbar = document.getElementById("visible--navbar");
+let closeNavbarBtn = document.getElementById("close--navbar--btn");
+let navbarMenu = document.getElementsByClassName("navbar--menu");
+
+navbarSectionUl.addEventListener("click", function () {
+  visibleNavbar.style.display = "block";
+});
+
+closeNavbarBtn.addEventListener("click", function () {
+  visibleNavbar.style.display = "none";
+});

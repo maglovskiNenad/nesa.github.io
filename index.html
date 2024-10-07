@@ -16,16 +16,20 @@
     <header class="header" id="header">
       <navbar class="navbar">
         <ul class="ul--navbar">
-          <li class="dropdown--menu show--menu">
+          <li class="dropdown--menu show--menu" id="ul--section--navbar">
             <span class="one burger--menu"></span>
             <span class="two burger--menu"></span>
             <span class="three burger--menu"></span>
           </li>
           <div id="visible--navbar" class="navbar--menu">
-            <li class="li--navbar visible--navbar">Home</li>
-            <li class="li--navbar visible--navbar">About</li>
-            <li class="li--navbar visible--navbar">Roadmap</li>
-            <li class="li--navbar visible--navbar">Projects</li>
+            <li class="li--navbar visible--navbar"><a href="#">Home</a></li>
+            <li class="li--navbar visible--navbar"><a href="#">About</a></li>
+            <li class="li--navbar visible--navbar"><a href="#">Roadmap</a></li>
+            <li class="li--navbar visible--navbar"><a href="#">Projects</a></li>
+            <li class="li--navbar visible--navbar text" id="close--navbar--btn">
+              <span class="close--btn close--one"></span>
+              <span class="close--btn close--two"></span>
+            </li>
           </div>
         </ul>
       </navbar>
