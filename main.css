@@ -91,12 +91,11 @@ body {
     text-align: center;
     list-style: none;
     text-transform: uppercase;
-    margin: 10px 10px 0 0;
   }
 
   .visible--navbar {
-    margin: 10px;
-    height: 20px;
+    margin: 12px 0;
+    height: 25px;
     cursor: pointer;
   }
 
@@ -124,6 +123,13 @@ body {
   a {
     text-decoration: none;
     color: black;
+  }
+
+  .a--href {
+    margin-right: 45px;
+
+    letter-spacing: 4px;
+    font-size: x-large;
   }
 }
 
