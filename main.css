@@ -5,6 +5,12 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header {
@@ -120,11 +126,6 @@ body {
     margin-right: 30px;
   }
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
   .a--href {
     margin-right: 45px;
 
@@ -134,7 +135,59 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
+  .header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ul--navbar {
+    display: flex;
+  }
+
+  .dropdown--menu {
+    display: flex;
+  }
+
+  #ul--section--navbar {
+    display: none;
+  }
+
+  .logo--me {
+    display: none;
+  }
+
+  .navbar--menu {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  .li--navbar {
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  .visible--navbar {
+    margin: auto;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .visible--navbar:hover {
+    scale: 1.15;
+    font-weight: 900;
+    letter-spacing: 3px;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
