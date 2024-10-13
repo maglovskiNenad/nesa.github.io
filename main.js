@@ -18,3 +18,24 @@ window.addEventListener("resize", function () {
     visibleNavbar.style.display = "none";
   }
 });
+
+fetch("https://api.github.com/users/maglovskiNenad/repos", {
+  headers: {
+    Authorization: "GITHUB_TOKKEN",
+  },
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    const repoList = document.getElementById("repo--list");
+
+    data.forEach((repo) => {
+      const p = document.createElement("p");
+      p.className = "repo";
+      p.innerHTML = `<a href="${repo.html_url}" target="_blank">${
+        repo.description || "No description"
+      }</a> `;
+      repoList.appendChild(p);
+    });
+  })
+  .catch((error) => console.error("Error:", error));
