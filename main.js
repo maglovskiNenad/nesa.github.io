@@ -28,13 +28,15 @@ fetch("https://api.github.com/users/maglovskiNenad/repos", {
   .then((data) => {
     console.log(data);
     const repoList = document.getElementById("repo--list");
-
     data.forEach((repo) => {
       const p = document.createElement("p");
       p.className = "repo";
-      p.innerHTML = `<a href="${repo.html_url}" target="_blank">${
+      p.innerHTML = `
+      <a href="${repo.html_url}" target="_blank">${
         repo.description || "No description"
-      }</a> `;
+      }</a>
+      
+      `;
       repoList.appendChild(p);
     });
   })
