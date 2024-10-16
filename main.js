@@ -26,7 +26,6 @@ fetch("https://api.github.com/users/maglovskiNenad/repos", {
 })
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     const repoList = document.getElementById("repo--list");
     data.forEach((repo) => {
       const p = document.createElement("p");
@@ -35,7 +34,6 @@ fetch("https://api.github.com/users/maglovskiNenad/repos", {
       <a href="${repo.html_url}" target="_blank">${
         repo.description || "No description"
       }</a>
-      
       `;
       repoList.appendChild(p);
     });

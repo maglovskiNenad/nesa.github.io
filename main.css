@@ -176,7 +176,7 @@ a {
 
   /*   HERE STARTS ROADMAP SECTION   */
 
-  .roadmap {
+  .projects {
     width: 90%;
     display: block;
     text-align: center;
@@ -197,13 +197,12 @@ a {
     width: 70%;
     margin: 25px auto;
     padding: 25px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   }
 
   .repo:hover {
-    scale: 1.1;
+    scale: 1.05;
     transition: all 0.5s ease-in-out;
   }
 }
