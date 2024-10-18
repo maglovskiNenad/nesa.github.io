@@ -16,7 +16,7 @@ a {
   .header {
     width: 100%;
   }
-  
+
   .navbar {
     margin: 0;
     padding: 0;
@@ -174,7 +174,72 @@ a {
     margin: auto;
   }
 
-  /*   HERE STARTS ROADMAP SECTION   */
+  /*    HERE STARTS ROADMAP SECTION   */
+  .roadmap {
+    text-align: center;
+  }
+
+  .roadmap--board {
+    display: flex;
+  }
+
+  .roadmap--line {
+    margin: 0 0 0 25px;
+    width: 5%;
+  }
+
+  .line {
+    background-color: gray;
+    width: 5px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    margin-left: 2.5px;
+  }
+
+  .dots {
+    background-color: gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .roadmap--cards {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .card {
+    width: 85%;
+    margin: 20px 0;
+    border-radius: 10px;
+    filter: blur(5px);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .card:hover {
+    filter: blur(0);
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .card--title {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .card--text {
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+
+  /*   HERE STARTS PROJECTS SECTION   */
 
   .projects {
     width: 90%;
